@@ -3,7 +3,7 @@ import {DndProvider} from 'react-dnd'
 import {HTML5Backend} from 'react-dnd-html5-backend'
 import Calender from '../src/Components/Calender/Calendar'
 import HomePage from './Components/HomePage'
-import Kanban from './Components/Kanban'
+import Kanban from './Components/Kanban/Kanban'
 import Navbar from './Components/Navbar'
 
 function App() {

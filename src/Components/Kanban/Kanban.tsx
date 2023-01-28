@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import '../Kanban/Kanban.css'
 import { useDrag } from 'react-dnd'
 
 function Kanban() {
@@ -22,7 +23,7 @@ function Kanban() {
   }
 
   return (
-    <div style={{ height: '100vh' }}>
+    <div className='mt-5' style={{ height: '100%' }}>
       <div className="flex flex-row h-screem">
         <div className="w-4/5 ml-10 p-3">
           <div className="flex flex-col h-full">
@@ -30,7 +31,7 @@ function Kanban() {
               <h1 className='text-xl'>Kanban Board</h1>
             </div>
             <div className="bg-gray-200 rounded-b-lg p-5">
-              <div style={{ maxHeight: '69vh' }} className="flex flex-row ">
+              <div style={{ maxHeight: '65vh' }} className="flex flex-row ">
                 <div className="w-1/3">
                   <div className="bg-white shadow-md rounded-md p-3 h-full overflow-y-scroll">
                     <h2 className="text-center mb-5 text-amber-500 text-lg ">To Do</h2>
@@ -44,13 +45,13 @@ function Kanban() {
                     ))}
                   </div>
                 </div>
-                <div className="w-1/3" style={{ height: '69vh', marginLeft: '10px' }}>
+                <div className="w-1/3" style={{ height: '65vh', marginLeft: '10px' }}>
                   <div className="bg-white shadow-md rounded-md p-3 h-full">
                     <h2 className="text-center text-orange-500 mb-5 text-lg">In Progress</h2>
                     <div></div>
                   </div>
                 </div>
-                <div className="w-1/3" style={{ height: '69vh', marginLeft: '10px' }}>
+                <div className="w-1/3" style={{ height: '65vh', marginLeft: '10px' }}>
                   <div className="bg-white shadow-md rounded-md p-3 h-full">
                     <h2 className="text-center text-green-500 mb-5 text-lg">Done</h2>
                     <div></div>
